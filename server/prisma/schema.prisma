@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  userId            Int      @id @default(autoincrement())
+  username          String   @unique
+  email             String   @unique
+  profile           String?
+  profilePictureUrl String?
+  name              String
+  jobTitle          String
+  appTenure         String
+  skills            String[]
+  createdAt         DateTime
+  updatedAt         DateTime
+  clients           Client[]
+}
+
+model Workspace {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  name        String
+  description String
+  projects    Project[]
+  createdAt   String
+  updatedAt   String
+}
+
+model Client {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  name        String
+  description String
+  projects    Project[]
+  createdAt   String
+  updatedAt   String
+  User        User      @relation(fields: [userId], references: [userId])
+  userUserId  Int?
+}
+
+model Project {
+  id          Int       @id @default(autoincrement())
+  clientId    Int
+  workspaceId Int
+  name        String
+  date        String
+  description String
+  crafts      Craft[]
+  createdAt   String
+  updatedAt   String
+  Workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  Client      Client    @relation(fields: [clientId], references: [id])
+}
+
+model Craft {
+  id          Int     @id @default(autoincrement())
+  projectId   Int
+  description String
+  htmlCode    String
+  cssCode     String
+  jsCode      String
+  createdAt   String
+  updatedAt   String
+  Project     Project @relation(fields: [projectId], references: [id])
+}
