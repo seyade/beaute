@@ -1,0 +1,86 @@
+[
+  {
+    "userId": 1,
+    "username": "jamesbond",
+    "email": "james.bond@mi5.io",
+    "profile": "JB",
+    "profilePictureUrl": "",
+    "name": "James Bond",
+    "jobTitle": "Senior Fullstack Engineer",
+    "appTenure": "2 years",
+    "skills": ["Node.js", "Next.js", "React", "AWS", "Typescript", "Postgres"]
+  },
+  {
+    "userId": 2,
+    "username": "bishop2015",
+    "email": "bishop@thegoodwife.co",
+    "profile": "LB",
+    "profilePictureUrl": "",
+    "name": "Lemmond Bishop",
+    "jobTitle": "Engineer Manager",
+    "appTenure": "1.5 years",
+    "skills": [
+      "Node.js",
+      "Project Management",
+      "Management ",
+      "AWS",
+      "Budget Planning"
+    ]
+  },
+  {
+    "userId": 3,
+    "username": "jrees",
+    "email": "johnreese@personofinterest.com",
+    "profile": "JR",
+    "profilePictureUrl": "",
+    "name": "John Reese",
+    "jobTitle": "Senior Frontend Developer",
+    "appTenure": "5 months",
+    "skills": ["Next.js", "React", "Typescript", "Tailwindcss", "Node.js"]
+  },
+  {
+    "userId": 4,
+    "username": "thearchitect",
+    "email": "haroldfinch@personofinterest.com",
+    "profile": "HF",
+    "profilePictureUrl": "",
+    "name": "Harold Finch",
+    "jobTitle": "Technical Director",
+    "appTenure": "2 years",
+    "skills": [
+      "Board",
+      "Budget Planning",
+      "Strategy",
+      "Business",
+      "Management",
+      "Node.js",
+      "Java",
+      "React",
+      "AWS",
+      "Typescript",
+      "SQL",
+      ".NET",
+      "Azure",
+      "Docker"
+    ]
+  },
+  {
+    "userId": 5,
+    "username": "agentchan",
+    "email": "jchan@hongkong.io",
+    "profile": "JC",
+    "profilePictureUrl": "",
+    "name": "Jackie Chan",
+    "jobTitle": "Senior Frontend Engineer",
+    "appTenure": "2 years",
+    "skills": [
+      "Node.js",
+      "Next.js",
+      "React",
+      "AWS",
+      "Typescript",
+      "MongoDB",
+      "React-Native"
+    ]
+  }
+]
